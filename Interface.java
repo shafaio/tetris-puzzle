@@ -3,10 +3,6 @@ package tetris;
 import java.awt.*;
 import javax.swing.*;
 
-/**
- *
- * @author Ryo
- */
 public class Interface extends JPanel {
     
     static public final int SQUARE_SIZE = 30;
