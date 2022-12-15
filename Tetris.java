@@ -173,11 +173,7 @@ public class Tetris extends JFrame implements KeyListener {
         }
     }
 
-    /**************************
-     * 
-     * PRIVATE VARIABLES
-     * 
-     **************************/
+  
 
     static private Piece currentPiece;
     static private Piece nextPiece;
