@@ -1,14 +1,8 @@
-package tetris;
-
 import java.util.Random;
 import javax.swing.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.rmi.server.SocketSecurityException;
-
-/**
- * @author Thanh Le
- */
 
 public class Tetris extends JFrame implements KeyListener {
 
@@ -16,7 +10,7 @@ public class Tetris extends JFrame implements KeyListener {
     public static final int SCREEN_LENGTH = Interface.SQUARE_SIZE * (TetrisBoard.NUMBER_OF_ROWS + 1);
 
     public Tetris() {
-        super("Nanotech's Tetris!");
+        super("Tetris Puzzle!");
         newBoard = new TetrisBoard(0);
         setSize(SCREEN_WIDTH, SCREEN_LENGTH);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -126,7 +120,6 @@ public class Tetris extends JFrame implements KeyListener {
         }
     }
 
-    @Override
     public void keyPressed(KeyEvent event) {
         // System.out.println("You pressed " + event.getKeyChar());
         if (event.getKeyChar() == 'a') {
@@ -164,11 +157,9 @@ public class Tetris extends JFrame implements KeyListener {
         }
     }
 
-    @Override
     public void keyTyped(KeyEvent event) {
     }
 
-    @Override
     public void keyReleased(KeyEvent event) {
         if (event.getKeyChar() == 's') {
             newBoard.previousSpeed();

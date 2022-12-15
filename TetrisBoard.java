@@ -1,8 +1,3 @@
-package tetris;
-
-/**
- * @author Thanh Le
- */
 public class TetrisBoard {
     static public final int NUMBER_OF_ROWS = 20;
     static public final int NUMBER_OF_COLUMS = 12;

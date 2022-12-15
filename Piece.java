@@ -1,5 +1,3 @@
-package tetris;
-
 public class Piece {
     // Pieces constants
     public static final int EMPTY = 0;

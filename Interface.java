@@ -1,12 +1,6 @@
-package tetris;
-
 import java.awt.*;
 import javax.swing.*;
 
-/**
- *
- * @author Ryo
- */
 public class Interface extends JPanel {
     
     static public final int SQUARE_SIZE = 30;
@@ -16,7 +10,6 @@ public class Interface extends JPanel {
     static public final int BOARD_MODE = 0;
     static public final int NEXT_PIECE_MODE = 1;
     
-    @Override
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         this.setBackground(Color.DARK_GRAY);
