@@ -6,9 +6,6 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.rmi.server.SocketSecurityException;
 
-/**
- * @author Thanh Le
- */
 
 public class Tetris extends JFrame implements KeyListener {
 
@@ -182,11 +179,7 @@ public class Tetris extends JFrame implements KeyListener {
         }
     }
 
-    /**************************
-     * 
-     * PRIVATE VARIABLES
-     * 
-     **************************/
+  
 
     static private Piece currentPiece;
     static private Piece nextPiece;
