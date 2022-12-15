@@ -118,4 +118,49 @@ public class Piece {
 
     private static final int PIECE[][][];
 
+    static {
+        PIECE = new int[8][4][4];
+        // L shape -> (0,1), (1,1), (2,1), (2,2)
+        PIECE[LSHAPE][0][1] = LSHAPE;
+        PIECE[LSHAPE][1][1] = LSHAPE;
+        PIECE[LSHAPE][2][1] = LSHAPE;
+        PIECE[LSHAPE][2][2] = LSHAPE;
+
+        // reverse L shape -> (0,2), (1,2), (2,2), (2,1)
+        PIECE[LSHAPE_REVERSE][0][2] = LSHAPE_REVERSE;
+        PIECE[LSHAPE_REVERSE][1][2] = LSHAPE_REVERSE;
+        PIECE[LSHAPE_REVERSE][2][2] = LSHAPE_REVERSE;
+        PIECE[LSHAPE_REVERSE][2][1] = LSHAPE_REVERSE;
+
+        // ziczac -> (0,1), (1,1), (1,2), (2,2)
+        PIECE[ZICZAC][0][1] = ZICZAC;
+        PIECE[ZICZAC][1][1] = ZICZAC;
+        PIECE[ZICZAC][1][2] = ZICZAC;
+        PIECE[ZICZAC][2][2] = ZICZAC;
+
+        // ziczac reverse -> (0,2), (1,2) , (1,1) , (2,1)
+        PIECE[ZICZAC_REVERSE][0][2] = ZICZAC_REVERSE;
+        PIECE[ZICZAC_REVERSE][1][2] = ZICZAC_REVERSE;
+        PIECE[ZICZAC_REVERSE][1][1] = ZICZAC_REVERSE;
+        PIECE[ZICZAC_REVERSE][2][1] = ZICZAC_REVERSE;
+
+        // square
+        PIECE[SQUARE][0][1] = SQUARE;
+        PIECE[SQUARE][0][2] = SQUARE;
+        PIECE[SQUARE][1][1] = SQUARE;
+        PIECE[SQUARE][1][2] = SQUARE;
+
+        // straight line -> (1,0), (1,1), (1,2), (1,3)
+        PIECE[STRAIGHT_LINE][0][2] = STRAIGHT_LINE;
+        PIECE[STRAIGHT_LINE][1][2] = STRAIGHT_LINE;
+        PIECE[STRAIGHT_LINE][2][2] = STRAIGHT_LINE;
+        PIECE[STRAIGHT_LINE][3][2] = STRAIGHT_LINE;
+
+        // T shape -> (0,1), (1,0), (1,1), (1,2)
+        PIECE[TSHAPE][0][1] = TSHAPE;
+        PIECE[TSHAPE][1][0] = TSHAPE;
+        PIECE[TSHAPE][1][1] = TSHAPE;
+        PIECE[TSHAPE][1][2] = TSHAPE;
+    }
+
 }
