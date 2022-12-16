@@ -135,6 +135,7 @@ public class Tetris extends JFrame implements KeyListener {
             newBoard.removePosition(currentPiece);
             Piece newPiece = currentPiece.clonePiece();
             newPiece.rotate();
+            System.out.println("Rotate!");
             if (newPiece.checkLegalPosition()) {
                 currentPiece = newPiece;
             } else {
