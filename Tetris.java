@@ -112,7 +112,6 @@ public class Tetris extends JFrame implements KeyListener {
                 }
             }
 
-            // set the piece on the board
             if (currentPiece.checkLegalPosition())
                 newBoard.setPosition(currentPiece);
             newInterface.repaint();
@@ -120,7 +119,6 @@ public class Tetris extends JFrame implements KeyListener {
     }
 
     public void keyPressed(KeyEvent event) {
-        // System.out.println("You pressed " + event.getKeyChar());
         if (event.getKeyChar() == 'a') {
             System.out.println("Move left!");
             speedLeftRight = -TetrisBoard.SUPER_SPEED;
