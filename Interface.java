@@ -14,7 +14,7 @@ public class Interface extends JPanel {
         super.paintComponent(g);
         this.setBackground(Color.DARK_GRAY);
         
-        // paint the tetris board
+        
         for ( int i = 0; i < TetrisBoard.NUMBER_OF_ROWS; i++ ) 
             for ( int j = 0; j < TetrisBoard.NUMBER_OF_COLUMS; j++ ) {
                 if ( TetrisBoard.Board[ i ][ j ] == Piece.EMPTY ) g.setColor(Color.black);
@@ -29,7 +29,7 @@ public class Interface extends JPanel {
                 drawFrame(g,i,j,BOARD_MODE);
             }
         
-        // paint the next piece board
+       
         for ( int i = 0; i < 4; i++ ) 
             for ( int j = 0; j < 4; j++ ) {
                 if ( TetrisBoard.NextPieceBoard[ i ][ j ] == Piece.EMPTY ) g.setColor(Color.DARK_GRAY);
