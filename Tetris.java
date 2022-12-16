@@ -153,7 +153,7 @@ public class Tetris extends JFrame implements KeyListener {
         }
         if (event.getKeyChar() == 's') {
             newBoard.changeMode(TetrisBoard.SUPER_SPEED);
-            System.out.println("test");
+            System.out.println("Turbo!!!");
         }
     }
 
@@ -163,7 +163,7 @@ public class Tetris extends JFrame implements KeyListener {
     public void keyReleased(KeyEvent event) {
         if (event.getKeyChar() == 's') {
             newBoard.previousSpeed();
-            System.out.println("hrllo");
+            System.out.println("Turbo!!!");
         }
         if (event.getKeyChar() == 'a') {
             speedLeftRight = 0;
