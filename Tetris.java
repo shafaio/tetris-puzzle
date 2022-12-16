@@ -83,14 +83,12 @@ public class Tetris extends JFrame implements KeyListener {
            
             newBoard.removePosition(currentPiece);
             if (tEnd - tStart >= newBoard.getMode()) {
-                // System.out.println("Satisfied!");
                 tStart = System.currentTimeMillis();
                 Piece newPiece = currentPiece.clonePiece();
                 newPiece.moveDown();
                 if (newPiece.checkLegalPosition()) {
                     currentPiece = newPiece;
                 } else {
-                    // Thread.sleep(50);
                     if (!newPiece.checkLegalPosition()) {
                         System.out.println("New Piece Generated!");
                         newBoard.setPosition(currentPiece);
