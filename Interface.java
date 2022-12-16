@@ -44,7 +44,6 @@ public class Interface extends JPanel {
                 drawFrame(g,(NEXT_PIECE_Y + i),(NEXT_PIECE_X + j),NEXT_PIECE_MODE);
             }
         
-        // print score
         g.setColor(Color.yellow);
         g.setFont(new Font("SansSerif", Font.BOLD, 20));
         g.drawString("Next Piece", (TetrisBoard.NUMBER_OF_COLUMS + 1) * SQUARE_SIZE, (1) * SQUARE_SIZE );
