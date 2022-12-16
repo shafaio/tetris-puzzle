@@ -33,37 +33,37 @@ public class Tetris extends JFrame implements KeyListener {
         Tetris newTetris = new Tetris();
         Random GenRandom = new Random();
 
-        // time counter variables
+       
         long tStart = System.currentTimeMillis();
         long tStartLR = System.currentTimeMillis();
 
-        // get the next piece randomly
+        
         int type = GenRandom.nextInt() % 7;
         if (type < 0)
             type = -type;
         type++;
 
-        // initialize the piece
+        
         currentPiece = new Piece(type);
         newBoard.setPosition(currentPiece);
 
         Thread.sleep(1000L);
 
-        // game loop
+        
         while (!gameOver) {
-            // Delay a few millisecond in order to run the game smoothly
+          
             try {
                 Thread.sleep(60L);
             } catch (InterruptedException ex) {
             }
 
-            // Second time counter
+            
             long tEnd = System.currentTimeMillis();
             long tEndLR = System.currentTimeMillis();
 
-            // Moving left or right according to time
+         
             if (speedLeftRight != 0) {
-                // Temporarily remove the currentPiece from the board
+               
                 newBoard.removePosition(currentPiece);
                 if (tEndLR - tStartLR >= speedLeftRight) {
                     tStartLR = System.currentTimeMillis();
@@ -80,8 +80,7 @@ public class Tetris extends JFrame implements KeyListener {
                 newInterface.repaint();
             }
 
-            // Moving down according to time
-            // Temporarily remove the currentPiece from the board
+           
             newBoard.removePosition(currentPiece);
             if (tEnd - tStart >= newBoard.getMode()) {
                 // System.out.println("Satisfied!");
