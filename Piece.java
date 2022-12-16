@@ -1,5 +1,4 @@
 public class Piece {
-    // Pieces constants
     public static final int EMPTY = 0;
     public static final int LSHAPE = 1;
     public static final int LSHAPE_REVERSE = 2;
