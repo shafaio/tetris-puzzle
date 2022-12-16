@@ -7,7 +7,7 @@ public class TetrisBoard {
     static public final int LEVEL_DIFFERENCE = 25;
     static public final int STARTING_SPEED = 550;
 
-    // Difficulties constant
+
 
     static public final int[] LEVEL;
     static public final int SUPER_SPEED = 10;
@@ -55,7 +55,7 @@ public class TetrisBoard {
         return score;
     }
 
-    // checking for score and update board
+    
     public void update(int position) {
         for (int i = position; i < position + 4; i++)
             if (i < NUMBER_OF_ROWS) {
@@ -108,11 +108,7 @@ public class TetrisBoard {
         ;
     }
 
-    /*******************************
-     * 
-     * PRIVATE METHODS
-     * 
-     *******************************/
+
 
     private void initVariables() {
         Board = new int[NUMBER_OF_ROWS][NUMBER_OF_COLUMS];
