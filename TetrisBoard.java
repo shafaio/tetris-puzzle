@@ -59,7 +59,6 @@ public class TetrisBoard {
     public void update(int position) {
         for (int i = position; i < position + 4; i++)
             if (i < NUMBER_OF_ROWS) {
-                // System.out.println("Checking row " + i );
                 boolean filled = true;
                 for (int j = 0; j < NUMBER_OF_COLUMS; j++)
                     if (Board[i][j] <= 0) {
